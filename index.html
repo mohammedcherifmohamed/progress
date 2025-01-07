@@ -75,8 +75,6 @@
             max-width: 400px; /* Limit logo size */
             margin: 20px; /* Space between logo and form */
         }
-        .logo img{
-        }
 
         h1 {
             text-align: center;
@@ -133,14 +131,11 @@
             top: -10px;
             font-size: 12px;
         }
-
-        /* Hide Placeholder Text */
         input[type="text"]::placeholder,
         input[type="password"]::placeholder,
         input[type="email"]::placeholder {
             color: transparent;
         }
-
         /* Button Styles */
         button {
             background-color: #5cb85c;
@@ -153,12 +148,9 @@
             width: 100%;
             margin-top: 15px;
         }
-
         button:hover {
             background-color: #4cae4c;
         }
-
-        /* Forgot Password Link */
         a {
             display: block;
             text-decoration: none;
@@ -167,12 +159,9 @@
             text-align: center;
             margin-top: 10px;
         }
-
         a:hover {
             text-decoration: underline;
         }
-
-        /* Icon Styles */
         .input-wrapper i {
             position: absolute;
             right: 15px;
@@ -181,7 +170,40 @@
             color: #ffffff;
             font-size: 18px;
         }
-
+        @media (max-width: 425px) and (min-width: 375px) {
+            .container {
+            width: 300px;
+           
+        }
+        .logo {
+           
+           
+           /* width: 90%; */
+           max-width: 300px;
+       }
+       .logo img{
+        width: 90%;
+        height: 90%;
+        padding: 5px;
+       }
+        }
+        @media (max-width: 376px) and (min-width: 270px) {
+            .container {
+            width: 300px;
+           
+        }
+        .logo {
+           
+           
+             /* width: 90%;  */
+           max-width: 280px;
+       }
+       .logo img{
+        width: 90%;
+        height: 90%;
+        padding: 5px;
+       }
+        }
     </style>
 </head>
 <body>
